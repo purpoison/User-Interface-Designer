@@ -207,6 +207,8 @@ body {
 .main {
 	&__content {
 		position: relative;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__column {
@@ -221,12 +223,16 @@ body {
 		z-index: 1;
 	}
 	&__after {
+		display: inline-block;
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 30px;
-		letter-spacing: 0.585em;
+		letter-spacing: 1em;
 		color: rgba(255, 255, 255, 0.3);
-		display: inline-block;
+		flex: 0 0;
+		z-index: 10;
+		
+		transform: rotate(90deg);
 	}
 }
 
