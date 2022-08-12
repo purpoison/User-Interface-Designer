@@ -197,7 +197,7 @@ body {
   padding-bottom: 220px;
 }
 .main__column {
-  flex: 0 1 60%;
+  flex: 0 1 100%;
   z-index: 10;
 }
 .main__img {
@@ -231,7 +231,7 @@ body {
   line-height: 180%;
   color: #FFFFFF;
   margin-bottom: 10px;
-  max-width: 70%;
+  max-width: 40%;
 }
 .column__link {
   font-size: 15px;
