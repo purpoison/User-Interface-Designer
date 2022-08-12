@@ -194,7 +194,6 @@ body {
 .main__content {
   position: relative;
   display: flex;
-  justify-content: space-between;
   padding-bottom: 220px;
 }
 .main__column {
