@@ -215,8 +215,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
   z-index: 10;
   transform: rotate(90deg);
-  right: -104px;
-  top: 50%;
+  right: -9%;
+  top: 35%;
 }
 
 .column__title {
@@ -245,7 +245,7 @@ body {
 .column__link::after {
   position: absolute;
   content: "";
-  background-image: url(../img/arrow-right.png);
+  background-image: url(../img/main/arrow-right.png);
   background-position: center;
   background-size: cover;
   height: 20px;
