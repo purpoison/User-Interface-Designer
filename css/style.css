@@ -208,15 +208,16 @@ body {
   z-index: 1;
 }
 .main__after {
-  display: inline-block;
+  position: absolute;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1em;
   color: rgba(255, 255, 255, 0.3);
-  flex: 0 0;
   z-index: 10;
   transform: rotate(90deg);
+  right: -104px;
+  top: 50%;
 }
 
 .column__title {
@@ -238,8 +239,8 @@ body {
   background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   position: relative;
+  padding: 0 20px 0 0;
 }
 .column__link::after {
   position: absolute;
@@ -250,6 +251,6 @@ body {
   height: 20px;
   width: 20px;
   top: 1px;
-  right: -40px;
+  right: -20px;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
