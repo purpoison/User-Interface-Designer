@@ -91,6 +91,7 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 blockquote,
 q {
 	quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
 	content: "";
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -170,12 +176,14 @@ body {
 
 .header {
 	padding: 25px 0 105px 0;
+
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 5px 0;
 	}
+
 	&__list {
 		display: flex;
 	}
@@ -188,6 +196,7 @@ body {
 			line-height: 30px;
 			color: #ffffff;
 		}
+
 		&:not(:last-child) {
 			margin-right: 40px;
 		}
@@ -214,6 +223,7 @@ body {
 		right: 104px;
 		z-index: 1;
 	}
+
 	&__after {
 		position: absolute;
 		font-weight: 700;
@@ -245,6 +255,7 @@ body {
 		margin: 0 0 10px 0;
 		max-width: 40%;
 	}
+
 	&__link {
 		font-size: 15px;
 		line-height: 180%;
@@ -253,6 +264,7 @@ body {
 		-webkit-text-fill-color: transparent;
 		position: relative;
 		padding: 0 20px 0 0;
+
 		&::after {
 			position: absolute;
 			content: "";
@@ -295,6 +307,7 @@ body {
 		color: #ffffff;
 		margin: 0 0 10px 0;
 	}
+
 	&__subtitle {
 		font-size: 20px;
 		line-height: 180%;
@@ -318,9 +331,6 @@ body {
 		margin: 0 0 10px 0;
 	}
 
-	&__box {
-	}
-
 	&__row {
 		display: flex;
 		padding: -7.5px;
@@ -332,6 +342,7 @@ body {
 		border-radius: 50px;
 		padding: 60px 25px;
 		margin: 7.5px;
+
 		& img {
 			margin: 0 0 20px 0;
 		}
@@ -339,7 +350,6 @@ body {
 }
 
 .item {
-
 	&__title {
 		font-weight: 700;
 		font-size: 30px;
