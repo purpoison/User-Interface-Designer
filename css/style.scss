@@ -157,6 +157,16 @@ body {
 	box-sizing: content-box;
 }
 
+.btn {
+	cursor: pointer;
+	background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
+	border-radius: 50px;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
 // ---------------------------------HEADER
 
 .header {
@@ -167,29 +177,12 @@ body {
 		align-items: center;
 		padding: 5px 0;
 	}
-
-	&__logo {
-	}
-
-	&__nav {
-	}
-
 	&__list {
-	}
-
-	&__btn {
-		cursor: pointer;
-		background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
-		border-radius: 50px;
-		padding: 10px 20px 10px 20px;
-		font-size: 20px;
-		line-height: 30px;
-		color: #ffffff;
+		display: flex;
 	}
 }
 
 .list {
-	display: flex;
 	&__item {
 		& a {
 			font-size: 20px;
@@ -278,3 +271,33 @@ body {
 	}
 }
 
+.about {
+	&__social {
+		display: flex;
+		justify-content: space-around;
+		padding-bottom: 150px;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__box {
+	}
+}
+
+.box {
+
+	&__title {
+		font-weight: 700;
+		font-size: 50px;
+		line-height: 120%;
+		color: #FFFFFF;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+		line-height: 180%;
+		color: #FFFFFF;
+	}
+}
