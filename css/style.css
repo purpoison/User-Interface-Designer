@@ -288,12 +288,14 @@ body {
 
 .services__content {
   text-align: center;
+  margin: 0 0 200px 0;
 }
 .services__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 120%;
   color: #FFFFFF;
+  margin: 0 0 10px 0;
 }
 .services__row {
   display: flex;
@@ -306,12 +308,16 @@ body {
   padding: 60px 25px;
   margin: 7.5px;
 }
+.services__item img {
+  margin: 0 0 20px 0;
+}
 
 .item__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 120%;
   color: #FFFFFF;
+  margin: 0 0 10px 0;
 }
 .item__subtitle {
   font-size: 20px;

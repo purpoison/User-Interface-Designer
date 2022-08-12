@@ -307,6 +307,7 @@ body {
 
 	&__content {
 		text-align: center;
+		margin: 0 0 200px 0;
 	}
 
 	&__title {
@@ -314,6 +315,7 @@ body {
 		font-size: 50px;
 		line-height: 120%;
 		color: #FFFFFF;
+		margin: 0 0 10px 0;
 	}
 
 	&__box {
@@ -330,6 +332,9 @@ body {
 		border-radius: 50px;
 		padding: 60px 25px;
 		margin: 7.5px;
+		& img {
+			margin: 0 0 20px 0;
+		}
 	}
 }
 
@@ -340,6 +345,7 @@ body {
 		font-size: 30px;
 		line-height: 120%;
 		color: #FFFFFF;
+		margin: 0 0 10px 0;
 	}
 
 	&__subtitle {
