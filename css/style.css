@@ -284,4 +284,37 @@ body {
   line-height: 180%;
   color: #ffffff;
   margin: 0 0 30px 0;
+}
+
+.services__content {
+  text-align: center;
+}
+.services__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.services__row {
+  display: flex;
+  padding: -7.5px;
+}
+.services__item {
+  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 60px 25px;
+  margin: 7.5px;
+}
+
+.item__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.item__subtitle {
+  font-size: 20px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=style.css.map */
