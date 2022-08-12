@@ -145,6 +145,7 @@ body {
 	height: 100%;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
+	background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
 }
 
 .container {
@@ -156,8 +157,9 @@ body {
 	box-sizing: content-box;
 }
 
+// ---------------------------------HEADER
+
 .header {
-	background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
 	padding: 25px 0 105px 0;
 	&__row {
 		display: flex;
@@ -177,12 +179,12 @@ body {
 
 	&__btn {
 		cursor: pointer;
-		background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+		background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
 		border-radius: 50px;
 		padding: 10px 20px 10px 20px;
 		font-size: 20px;
 		line-height: 30px;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 }
 
@@ -192,11 +194,68 @@ body {
 		& a {
 			font-size: 20px;
 			line-height: 30px;
-			color: #FFFFFF;
+			color: #ffffff;
 		}
 		&:not(:last-child) {
 			margin-right: 40px;
 		}
 	}
-	
+}
+
+// --------------------------------------MAIN
+
+.main {
+
+	&__content {
+		display: flex;
+	}
+
+	&__column {
+	}
+
+	&__img {
+		& img {
+			width: 487px;
+			height: 650px;
+		}
+		
+	}
+}
+
+.column {
+
+	&__title {
+		font-weight: 700;
+		font-size: 100px;
+		line-height: 120%;
+		color: #FFFFFF;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+		line-height: 180%;
+		color: #FFFFFF;
+	}
+
+	&__link {
+		font-size: 15px;
+		line-height: 180%;
+		background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url(../img/arrow-right.png);
+			background-position: center;
+			background-size: cover;
+			height: 20px;
+			width: 20px;
+			top: 1px;
+			right: -40px;
+			cursor: pointer;
+		}
+	}
 }
