@@ -225,6 +225,7 @@ body {
   line-height: 120%;
   color: #FFFFFF;
   margin-bottom: 10px;
+  max-width: 60%;
 }
 .column__subtitle {
   font-size: 20px;
