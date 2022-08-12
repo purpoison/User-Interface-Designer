@@ -192,11 +192,25 @@ body {
 }
 
 .main__content {
-  display: flex;
+  position: relative;
 }
-.main__img img {
-  width: 487px;
-  height: 650px;
+.main__column {
+  width: 60%;
+  z-index: 10;
+}
+.main__img {
+  position: absolute;
+  top: 0px;
+  right: 104px;
+  z-index: 1;
+}
+.main__after {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.585em;
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
 }
 
 .column__title {
@@ -204,11 +218,13 @@ body {
   font-size: 100px;
   line-height: 120%;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 .column__subtitle {
   font-size: 20px;
   line-height: 180%;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 .column__link {
   font-size: 15px;
