@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,43 +104,43 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 button {
-	border: none;
-	outline: none;
+  border: none;
+  outline: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*-----------------------------RESET--------------------*/
@@ -148,219 +148,231 @@ a {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 
 body {
-	height: 100%;
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
 }
 
 .container {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-	height: 100%;
-	box-sizing: content-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  box-sizing: content-box;
 }
 
 .btn {
-	cursor: pointer;
-	background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
-	border-radius: 50px;
-	padding: 10px 20px 10px 20px;
-	font-size: 20px;
-	line-height: 30px;
-	color: #ffffff;
+  cursor: pointer;
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 // ---------------------------------HEADER
 
 .header {
-	padding: 25px 0 105px 0;
+  padding: 25px 0 105px 0;
+  &__nav {
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
 
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 5px 0;
-	}
-
-	&__list {
-		display: flex;
-	}
+  &__list {
+    display: flex;
+  }
 }
 
 .list {
-	&__item {
-		& a {
-			font-size: 20px;
-			line-height: 30px;
-			color: #ffffff;
-		}
+  &__item {
+    & a {
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+    }
 
-		&:not(:last-child) {
-			margin-right: 40px;
-		}
-	}
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
 }
 
 // --------------------------------------MAIN
 
 .main {
-	&__content {
-		position: relative;
-		display: flex;
-		padding: 0 0 220px 0;
-	}
+  &__content {
+    position: relative;
+    display: flex;
+    padding: 0 0 220px 0;
+  }
 
-	&__column {
-		flex: 0 1 100%;
-		z-index: 10;
-	}
+  &__column {
+    flex: 0 1 100%;
+    z-index: 10;
+  }
 
-	&__img {
-		position: absolute;
-		top: 0px;
-		right: 104px;
-		z-index: 1;
-	}
+  &__img {
+    position: absolute;
+    top: 0px;
+    right: 104px;
+    z-index: 1;
+  }
 
-	&__after {
-		position: absolute;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 30px;
-		letter-spacing: 1em;
-		color: rgba(255, 255, 255, 0.3);
-		z-index: 10;
-		transform: rotate(90deg);
-		right: -9%;
-		top: 35%;
-	}
+  &__after {
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1em;
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 10;
+    transform: rotate(90deg);
+    right: -9%;
+    top: 35%;
+  }
 }
 
 .column {
-	&__title {
-		font-weight: 700;
-		font-size: 100px;
-		line-height: 120%;
-		color: #ffffff;
-		margin: 0 0 10px 0;
-		max-width: 60%;
-	}
+  &__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    max-width: 60%;
+    @media screen and (max-width: 500px) {
+      font-size: 65px;
+    }
+  }
 
-	&__subtitle {
-		font-size: 20px;
-		line-height: 180%;
-		color: #ffffff;
-		margin: 0 0 10px 0;
-		max-width: 40%;
-	}
+  &__subtitle {
+    font-size: 20px;
+    line-height: 180%;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    max-width: 40%;
+  }
 
-	&__link {
-		font-size: 15px;
-		line-height: 180%;
-		background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		position: relative;
-		padding: 0 20px 0 0;
+  &__link {
+    font-size: 15px;
+    line-height: 180%;
+    background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding: 0 20px 0 0;
 
-		&::after {
-			position: absolute;
-			content: "";
-			background-image: url(../img/main/arrow-right.png);
-			background-position: center;
-			background-size: cover;
-			height: 20px;
-			width: 20px;
-			top: 1px;
-			right: -20px;
-			cursor: pointer;
-		}
-	}
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../img/main/arrow-right.png);
+      background-position: center;
+      background-size: cover;
+      height: 20px;
+      width: 20px;
+      top: 1px;
+      right: -20px;
+      cursor: pointer;
+    }
+  }
 }
 
 .about {
-	&__social {
-		display: flex;
-		justify-content: space-around;
-		padding: 0 0 150px 0;
-	}
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 150px 0;
+    @media screen and (max-width: 500px) {
+      padding: 0 0 5em 0;
+    }
+  }
 
-	&__content {
-		display: flex;
-		justify-content: space-between;
-		padding: 0 0 200px 0;
-	}
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 200px 0;
+  }
 
-	&__box {
-		padding: 67px 0 0 0;
-		flex: 0 1 49%;
-	}
+  &__box {
+    padding: 67px 0 0 0;
+    flex: 0 1 49%;
+  }
 }
 
 .box {
-	&__title {
-		font-weight: 700;
-		font-size: 50px;
-		line-height: 120%;
-		color: #ffffff;
-		margin: 0 0 10px 0;
-	}
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
 
-	&__subtitle {
-		font-size: 20px;
-		line-height: 180%;
-		color: #ffffff;
-		margin: 0 0 30px 0;
-	}
+  &__subtitle {
+    font-size: 20px;
+    line-height: 180%;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+  }
 }
 
 .services {
+  &__content {
+    text-align: center;
+    margin: 0 0 200px 0;
+  }
 
-	&__content {
-		text-align: center;
-		margin: 0 0 200px 0;
-	}
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
 
-	&__title {
-		font-weight: 700;
-		font-size: 50px;
-		line-height: 120%;
-		color: #FFFFFF;
-		margin: 0 0 10px 0;
-	}
+  &__row {
+    display: flex;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
 
-	&__row {
-		display: flex;
-		padding: -7.5px;
-	}
+  &__item {
+    background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 60px 25px;
+    margin: 7.5px;
 
-	&__item {
-		background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
-		box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-		border-radius: 50px;
-		padding: 60px 25px;
-		margin: 7.5px;
-
-		& img {
-			margin: 0 0 20px 0;
-		}
-	}
+    & img {
+      margin: 0 0 20px 0;
+    }
+  }
 }
 
 .item {
-	&__title {
-		font-weight: 700;
-		font-size: 30px;
-		line-height: 120%;
-		color: #FFFFFF;
-		margin: 0 0 10px 0;
-	}
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
 
-	&__subtitle {
-		font-size: 20px;
-		line-height: 180%;
-		color: rgba(255, 255, 255, 0.5);
-	}
+  &__subtitle {
+    font-size: 20px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
